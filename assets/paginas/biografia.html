@@ -23,8 +23,9 @@
             <tr><a href="#proyectos" class="a"><strong>Proyectos</strong></a></tr>
             <tr><a href="#habilidades" class="a"><strong>Habilidades</strong></a></tr>
             <tr><a href="#formulario" class="a"><strong>Formulario</strong></a></tr>
-            <tr><a href="#video" class="a"><strong>Video</strong></a></tr>
+            <tr><a href="#video" class="a"><strong>Video</strong></a></tr>    
         </table>
+        <a href="#" class="a_menu"><img src="/assets/resources/img/menu.png" class="menu"></a>
     </div>
 
     <div class="sobre_mi" id="sobre_mi">
@@ -38,9 +39,15 @@
         <table class="tabla_proyectos">
             <tbody>
                 <tr>
-                    <td class="contenedor_img"><img src="/assets/resources/img/flecha_izquierda.png" class="flechas"><img src="/assets/resources/img/tonys1.png" class="image" id="tonys_1">
-                    <img src="/assets/resources/img/tonys2.png" class="image" id="tonys_2">
-                    <img src="/assets/resources/img/tonys3.png" class="image" id="tonys_3"><img src="/assets/resources/img/flecha_derecha.png" class="flechas"></td>
+                    <td class="contenedor">
+                        <div class="contenedor_img">
+                            <button onclick="cambiarImagen(-1)">Anterior</button>
+                            <img src="/assets/resources/img/tonys1.png" id="imagen1" class="imagen" />
+                            <img src="/assets/resources/img/tonys2.png" id="imagen2" class="imagen" />
+                            <img src="/assets/resources/img/tonys3.png" id="imagen3" class="imagen" />
+                            <button onclick="cambiarImagen(1)">Siguiente</button>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td colspan="3"><h2>Tonny's Kinal</h2></td>

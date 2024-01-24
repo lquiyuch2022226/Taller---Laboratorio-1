@@ -1,13 +1,11 @@
-let img1 = document.getElementById('tonys_1');
-let img2 = document.getElementById('tonys_2');
-let img3 = document.getElementById('tonys_3');
+let numIng = 1;
 
-let numImg = 1;
+function cambiarImagen(cambio) {
+    numIng = (numIng + cambio + 2) % 3 + 1;
 
-function cambiarImagen(){
-    img1.style.opacity = numImg === 1 ? '1' : 0;
-    img2.style.opacity = numImg === 2 ? '2' : 0;
-    img3.style.opacity = numImg === 3 ? '3' : 0;
+    for (let i = 1; i <= 3; i++) {
+        document.getElementById(`imagen${i}`).classList.remove('imagen_actual');
+    }
 
-    numImg = numImg === 3 ? 1 : numImg + 1;
+    document.getElementById(`imagen${numIng}`).classList.add('imagen_actual');
 }

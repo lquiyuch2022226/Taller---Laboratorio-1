@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .titulo{
     background : linear-gradient(#89E0A4, #8AE1C3, #89C6E0);
     text-align: center;
@@ -13,8 +17,18 @@
     background-color: black;
     text-align: left;
     line-height: 50px;
+    display: flex;
 }
 
+.menu{
+    height: 30px;
+}
+
+.a_menu{
+    margin-left: auto;
+    padding-right: 30px;
+    padding-top: 22px;
+}
 
 .a{
     color:white;
@@ -31,12 +45,20 @@
     height: 250px;
 }
 
-.image{
-    position: absolute;
+.contenedor_img {
+    position: relative;
+}
+
+.imagen {
     height: 400px;
     max-width: 600px;
-    opacity: 0;
+    display: none;
     transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
+
+.imagen_actual {
+    display: block;
 }
 
 .proyectos{
