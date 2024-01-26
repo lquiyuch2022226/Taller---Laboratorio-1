@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi biografía</title>
+    <link rel="icon" type="image/png" href="/assets/resources/img/icono_bio.png">
     <link rel="stylesheet" href="/assets/estilos/stylesBiografia.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
@@ -16,7 +17,7 @@
     <header>
         <div class="titulo">
             <h1>Luis Fernando Quiyuch Quiyuch</h1>
-            <h3>Estudiante de Kinal</h3>
+            <h3>2022226</h3>
         </div>
 
         <div class="tabla">
@@ -46,83 +47,68 @@
 
     <div class="sobre_mi" id="sobre_mi">
         <h2>Sobre mi</h2><br>
-        <p>Soy un estudiante de un perito en informatica y este es mi ulltimo año</p><br><br>
+        <p>Mi nombre es Luis Fernando Quiyuch Quiyuch ( 26 de octubre de 2005 ) actualmente tengo 18 años y estoy en mi
+             ultimo año de mi perito en informática.  Estoy analizando que carrera universitaria seguir ya que todavía no
+              encuentro mi vocación pero si seguir una carrera, estoy luchando por conseguir una beca universitaria ya que
+               eso me ayudaría bastante con el tema de los gastos. </p><br><br>
         <img src="/assets/resources/img/programador.png" class="mi_imagen" alt="Imagen de un programador" title="Yo" />
     </div>
 
     <hr>
     <div class="proyectos" id="proyectos">
-        <table class="tabla_proyectos">
-            <tbody>
-                <tr>
-                    <td><img src="/assets/resources/img/tonys1.png" class="image"></td>
-                    <td><img src="/assets/resources/img/tonys2.png" class="image"></td>
-                    <td><img src="/assets/resources/img/tonys3.png" class="image"></td>
-                </tr>
-                <tr>
-                    <td colspan="3">
-                        <h2>Tonny's Kinal</h2>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="3">
-                        <p>Este programa desarrollado en Java tiene como finalidad llevar el control de todos los
-                            movimientos de un alquila-fiestas</p>
-                    </td>
-                </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                    <td><img src="/assets/resources/img/ventas1.png" class="image" id="ventas_1">
-                        <img src="/assets/resources/img/ventas1.png" class="image" id="ventas_2">
-                        <img src="/assets/resources/img/ventas1.png" class="image" id="ventas_3">
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="3">
-                        <h2>Proyecto Ventas</h2>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="3">
-                        <p>Este programa desarrollado en Java EE lleva el orden de los productos de una tienda, tiene
-                            carrito incluido que imprime una factura</p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <section class="proyecto">
+                <h2 class="sub">Tonny's Kinal</h2><br>
+                <p>Este programa desarrollado en Java tiene como finalidad llevar el control de todos los movimientos de un alquila-fiestas</p><br>
+                <img src="/assets/resources/img/tonys1.png" class="image">
+                <img src="/assets/resources/img/tonys2.png" class="image">
+                <img src="/assets/resources/img/tonys3.png" class="image"><br><br><br>
+        </section>
+        <section class="proyecto">
+                <h2 class="sub">Proyecto Ventas</h2><br>
+                <p>Este programa desarrollado en Java EE lleva el orden de los productos de una tienda, tiene carrito incluido que imprime una factura</p><br>
+                <img src="/assets/resources/img/ventas1.png" class="image" id="ventas_1">
+                <img src="/assets/resources/img/ventas1.png" class="image" id="ventas_2">
+                <img src="/assets/resources/img/ventas1.png" class="image" id="ventas_3"><br><br>
+        </section>
     </div><br>
     <div class="habilidades" id="habilidades">
-        <h2>Hablidades que poseo</h2>
+        <h2 class="sub">Hablidades que poseo</h2>
         <table class="tabla_habilidades">
             <tr><img src="/assets/resources/img/java.png" class="habilidad_img"></tr>
             <tr><img src="/assets/resources/img/sql.png" class="habilidad_img"></tr>
             <tr><img src="/assets/resources/img/html.png" class="habilidad_img"></tr>
-            <tr><img src="/assets/estilos/" class="habilidad_img"></tr>
+            <tr><img src="/assets/resources/img/CSS3_logo.svg.png" class="habilidad_img"></tr>
         </table>
     </div>
-    <hr>
 
     <div class="formulario" id="formulario">
         <form>
+            <h2 class="sub">Formulario</h2><br>
             <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" placeholder="Juan"><br>
+            <input type="text" name="nombre" placeholder="Juan"><br><br>
             <label for="correo">Correo Electronico:</label>
-            <input type="text" name="correo" placeholder="juan@gmail.com"><br>
+            <input type="text" name="correo" placeholder="juan@gmail.com"><br><br>
             <label for="mensaje">Mensaje:</label>
-            <textarea type="text" name="mensaje" placeholder="Que bonita pagina"></textarea><br>
-            <input type="submit" value="Enviar">
+            <textarea type="text" name="mensaje" placeholder="Que bonita pagina"></textarea><br><br>
+            <input type="submit" value="Enviar" class="boton_formulario">
         </form>
-    </div>
-    <br><br>
+    </div><br><hr><br>
+    
 
     <div class="video" id="video">
+        <h2 class="sub">Video multimedia</h2><br>
         <video width="640" height="360" controls>
             <source src="/assets/resources/img/video.mp4" type="video/mp4">
         </video>
-    </div>
-    <script src="/assets/scripts/logicaBiografia.js"></script>
+    </div><br>
+    
+    <footer>
+        <div>
+            <p class="texto_footer"> Luis Fernando Quiyuch Quiyuch | Kinal | 6to Perito</p>
+        </div>
+    </footer>
 
+    <script src="/assets/scripts/logicaBiografia.js"></script>
 </body>
 
 </html>

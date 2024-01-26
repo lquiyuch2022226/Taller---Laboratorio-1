@@ -109,6 +109,11 @@ ul{
     text-align: center;
 }
 
+.boton_formulario{
+    color: white;
+    background: linear-gradient(90deg, rgba(6,96,150,1) 0%, rgba(112,44,231,1)50%,rgba(7,168,121,1) 100%);
+}
+
 footer{
     color: white;
     background: linear-gradient(90deg, rgba(6,96,150,1) 0%, rgba(112,44,231,1)50%,rgba(7,168,121,1) 100%);
