@@ -1,11 +1,12 @@
-let numIng = 1;
+const nav = document.querySelector("#nav");
+const abrir = document.querySelector("#abrir");
+const cerrar = document.querySelector("#cerrar");
 
-function cambiarImagen(cambio) {
-    numIng = (numIng + cambio + 2) % 3 + 1;
+abrir.addEventListener("click",()=>{
+    nav.classList.add("visible");
+})
 
-    for (let i = 1; i <= 3; i++) {
-        document.getElementById(`imagen${i}`).classList.remove('imagen_actual');
-    }
+cerrar.addEventListener("click", () =>{
+    nav.classList.remove("visible");
+})
 
-    document.getElementById(`imagen${numIng}`).classList.add('imagen_actual');
-}

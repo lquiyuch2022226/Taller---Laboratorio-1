@@ -7,6 +7,50 @@ body{
     overflow-x: hidden;
 }
 
+.boton_cerrar{
+    border: 0;
+    background-color: white;
+    cursor: pointer;
+}
+
+.nav{
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    max-width: 550px;
+    top: 0;
+    right: 0;
+    background-color: black;
+    bottom: 0;
+    position: fixed;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+}
+
+.nav.visible{
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav_lista{
+    text-align: right;
+}
+
+.nav_lista li a{
+    display: block; 
+    padding: 15px 0;
+    text-decoration: none;
+    color: white;
+}
+
+.nav_lista li a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
 
 .titulo{
     background : linear-gradient(#89E0A4, #8AE1C3, #89C6E0);
@@ -29,6 +73,7 @@ body{
     margin-left: auto;
     padding-right: 30px;
     padding-top: 22px;
+    cursor: pointer;
 }
 
 .a{
@@ -50,12 +95,9 @@ body{
     position: relative;
 }
 
-.imagen {
+.image{
     height: 400px;
     max-width: 600px;
-    display: none;
-    transition: opacity 1s ease-in-out;
-    opacity: 1;
 }
 
 .imagen_actual {
@@ -70,8 +112,7 @@ body{
 }
 
 .tabla_proyectos td{
-    border: 1px solid rgb(187, 185, 180);
-    padding: 10px;
+    border:black
 }
 
 .habilidad_img{
@@ -110,3 +151,4 @@ label {
 .flechas{
     height: 40px;
 }
+

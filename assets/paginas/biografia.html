@@ -12,21 +12,37 @@
 </head>
 
 <body>
-    <div class="titulo">
-        <h1>Luis Fernando Quiyuch Quiyuch</h1>
-        <h3>Estudiante de Kinal</h3>
-    </div>
 
-    <div class="tabla">
-        <table class="table">
-            <tr><a href="#sobre_mi" class="a"><strong>Sobre mí</strong></a></tr>
-            <tr><a href="#proyectos" class="a"><strong>Proyectos</strong></a></tr>
-            <tr><a href="#habilidades" class="a"><strong>Habilidades</strong></a></tr>
-            <tr><a href="#formulario" class="a"><strong>Formulario</strong></a></tr>
-            <tr><a href="#video" class="a"><strong>Video</strong></a></tr>    
-        </table>
-        <a href="#" class="a_menu"><img src="/assets/resources/img/menu.png" class="menu"></a>
-    </div>
+    <header>
+        <div class="titulo">
+            <h1>Luis Fernando Quiyuch Quiyuch</h1>
+            <h3>Estudiante de Kinal</h3>
+        </div>
+
+        <div class="tabla">
+            <table class="table">
+                <tr><a href="#sobre_mi" class="a"><strong>Sobre mí</strong></a></tr>
+                <tr><a href="#proyectos" class="a"><strong>Proyectos</strong></a></tr>
+                <tr><a href="#habilidades" class="a"><strong>Habilidades</strong></a></tr>
+                <tr><a href="#formulario" class="a"><strong>Formulario</strong></a></tr>
+                <tr><a href="#video" class="a"><strong>Video</strong></a></tr>
+            </table>
+
+            <a href="#" class="a_menu"><img src="/assets/resources/img/menu.png" class="menu" id="abrir"></a>
+
+
+
+        </div>
+
+        <nav class="nav" id="nav">
+            <ul class="nav_lista">
+                <button id="cerrar" class="boton_cerrar"><img src="/assets/resources/img/cerrar.svg"></button>
+                <li><a href="../../index.html">Página Principal</a></li>
+                <li><a href="/assets/paginas/biografia.html">Biografía</a></li>
+                <li><a href="/assets/paginas/kinal.html">Kinal</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <div class="sobre_mi" id="sobre_mi">
         <h2>Sobre mi</h2><br>
@@ -39,34 +55,39 @@
         <table class="tabla_proyectos">
             <tbody>
                 <tr>
-                    <td class="contenedor">
-                        <div class="contenedor_img">
-                            <button onclick="cambiarImagen(-1)">Anterior</button>
-                            <img src="/assets/resources/img/tonys1.png" id="imagen1" class="imagen" />
-                            <img src="/assets/resources/img/tonys2.png" id="imagen2" class="imagen" />
-                            <img src="/assets/resources/img/tonys3.png" id="imagen3" class="imagen" />
-                            <button onclick="cambiarImagen(1)">Siguiente</button>
-                        </div>
+                    <td><img src="/assets/resources/img/tonys1.png" class="image"></td>
+                    <td><img src="/assets/resources/img/tonys2.png" class="image"></td>
+                    <td><img src="/assets/resources/img/tonys3.png" class="image"></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <h2>Tonny's Kinal</h2>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="3"><h2>Tonny's Kinal</h2></td>
-                </tr>
-                <tr>
-                    <td colspan="3"><p>Este programa desarrollado en Java tiene como finalidad llevar el control de todos los movimientos de un alquila-fiestas</p></td>
+                    <td colspan="3">
+                        <p>Este programa desarrollado en Java tiene como finalidad llevar el control de todos los
+                            movimientos de un alquila-fiestas</p>
+                    </td>
                 </tr>
             </tbody>
             <tbody>
                 <tr>
-                    <td><img src="/assets/resources/img/flecha_izquierda.png" class="flechas"><img src="/assets/resources/img/ventas1.png" class="image" id="ventas_1">
-                    <img src="/assets/resources/img/ventas1.png" class="image" id="ventas_2">
-                    <img src="/assets/resources/img/ventas1.png" class="image" id="ventas_3"><img src="/assets/resources/img/flecha_derecha.png" class="flechas"></td>
+                    <td><img src="/assets/resources/img/ventas1.png" class="image" id="ventas_1">
+                        <img src="/assets/resources/img/ventas1.png" class="image" id="ventas_2">
+                        <img src="/assets/resources/img/ventas1.png" class="image" id="ventas_3">
+                    </td>
                 </tr>
                 <tr>
-                    <td colspan="3"><h2 >Proyecto Ventas</h2></td>
+                    <td colspan="3">
+                        <h2>Proyecto Ventas</h2>
+                    </td>
                 </tr>
                 <tr>
-                    <td colspan="3"><p>Este programa desarrollado en Java EE lleva el orden de los productos de una tienda, tiene carrito incluido que imprime una factura</p></td>
+                    <td colspan="3">
+                        <p>Este programa desarrollado en Java EE lleva el orden de los productos de una tienda, tiene
+                            carrito incluido que imprime una factura</p>
+                    </td>
                 </tr>
             </tbody>
         </table>
@@ -79,7 +100,8 @@
             <tr><img src="/assets/resources/img/html.png" class="habilidad_img"></tr>
             <tr><img src="/assets/estilos/" class="habilidad_img"></tr>
         </table>
-    </div><hr>
+    </div>
+    <hr>
 
     <div class="formulario" id="formulario">
         <form>
