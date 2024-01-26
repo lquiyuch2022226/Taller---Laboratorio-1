@@ -9,6 +9,11 @@
     background: linear-gradient(90deg, rgba(7,168,121,1) 0%, rgba(6,96,150,1) 50%, rgba(112,44,231,1) 100%);
 }
 
+.cabeza p{
+    max-width: 75%;
+    margin: 0 auto;
+}
+
 a{
     color: white;
     text-decoration: none;
@@ -45,8 +50,30 @@ ul{
     border-radius: 25px;
     margin-bottom: 10px;
     color: white;
-    text-align: left;
+}
+
+.descripcion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 85%;
+}
+
+.cancion{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     justify-content: center;
+    padding: 20px;
+    position: relative;
+    height: 100%;
+}
+
+.img_cancion{
+    height: 100%;
+    width: 100%;
+    max-width: 95vh; 
+    object-fit: contain;
 }
 
 .numero_dos{
@@ -70,7 +97,8 @@ ul{
 .texto{
     padding: 10px;
     text-align: left;
-    max-width: 45vh;
+    max-width: 30vh;
+    min-height: 80%;
 }
 
 .titulo{
