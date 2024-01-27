@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi biografía</title>
+    <link rel="icon" type="image/png" href="/assets/resources/img/icono_bio.png">
+    <link rel="stylesheet" href="/assets/estilos/stylesBiografia.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="titulo">
+            <h1>Luis Fernando Quiyuch Quiyuch</h1>
+            <h3>2022226</h3>
+        </div>
+
+        <div class="tabla">
+            <table class="table">
+                <tr><a href="#sobre_mi" class="a"><strong>Sobre mí</strong></a></tr>
+                <tr><a href="#proyectos" class="a"><strong>Proyectos</strong></a></tr>
+                <tr><a href="#habilidades" class="a"><strong>Habilidades</strong></a></tr>
+                <tr><a href="#formulario" class="a"><strong>Formulario</strong></a></tr>
+                <tr><a href="#video" class="a"><strong>Video</strong></a></tr>
+            </table>
+
+            <a href="#" class="a_menu"><img src="/assets/resources/img/menu.png" class="menu" id="abrir"></a>
+
+
+
+        </div>
+
+        <nav class="nav" id="nav">
+            <ul class="nav_lista">
+                <button id="cerrar" class="boton_cerrar"><img src="/assets/resources/img/cerrar.svg"></button>
+                <li><a href="../../index.html">Página Principal</a></li>
+                <li><a href="/assets/paginas/biografia.html">Biografía</a></li>
+                <li><a href="/assets/paginas/kinal.html">Kinal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="sobre_mi" id="sobre_mi">
+        <h2>Sobre mi</h2><br>
+        <p>Mi nombre es Luis Fernando Quiyuch Quiyuch ( 26 de octubre de 2005 ) actualmente tengo 18 años y estoy en mi
+             ultimo año de mi perito en informática.  Estoy analizando que carrera universitaria seguir ya que todavía no
+              encuentro mi vocación pero si seguir una carrera, estoy luchando por conseguir una beca universitaria ya que
+               eso me ayudaría bastante con el tema de los gastos. </p><br><br>
+        <img src="/assets/resources/img/programador.png" class="mi_imagen" alt="Imagen de un programador" title="Yo" />
+    </div>
+
+    <hr>
+    <div class="proyectos" id="proyectos">
+        <section class="proyecto">
+                <h2 class="sub">Tonny's Kinal</h2><br>
+                <p>Este programa desarrollado en Java tiene como finalidad llevar el control de todos los movimientos de un alquila-fiestas</p><br>
+                <img src="/assets/resources/img/tonys1.png" class="image">
+                <img src="/assets/resources/img/tonys2.png" class="image">
+                <img src="/assets/resources/img/tonys3.png" class="image"><br><br><br>
+        </section>
+        <section class="proyecto">
+                <h2 class="sub">Proyecto Ventas</h2><br>
+                <p>Este programa desarrollado en Java EE lleva el orden de los productos de una tienda, tiene carrito incluido que imprime una factura</p><br>
+                <img src="/assets/resources/img/ventas1.png" class="image" id="ventas_1">
+                <img src="/assets/resources/img/ventas1.png" class="image" id="ventas_2">
+                <img src="/assets/resources/img/ventas1.png" class="image" id="ventas_3"><br><br>
+        </section>
+    </div><br>
+    <div class="habilidades" id="habilidades">
+        <h2 class="sub">Hablidades que poseo</h2>
+        <table class="tabla_habilidades">
+            <tr><img src="/assets/resources/img/java.png" class="habilidad_img"></tr>
+            <tr><img src="/assets/resources/img/sql.png" class="habilidad_img"></tr>
+            <tr><img src="/assets/resources/img/html.png" class="habilidad_img"></tr>
+            <tr><img src="/assets/resources/img/CSS3_logo.svg.png" class="habilidad_img"></tr>
+        </table>
+    </div>
+
+    <div class="formulario" id="formulario">
+        <form>
+            <h2 class="sub">Formulario</h2><br>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" placeholder="Juan"><br><br>
+            <label for="correo">Correo Electronico:</label>
+            <input type="text" name="correo" placeholder="juan@gmail.com"><br><br>
+            <label for="mensaje">Mensaje:</label>
+            <textarea type="text" name="mensaje" placeholder="Que bonita pagina"></textarea><br><br>
+            <input type="submit" value="Enviar" class="boton_formulario">
+        </form>
+    </div><br><hr><br>
+    
+
+    <div class="video" id="video">
+        <h2 class="sub">Video multimedia</h2><br>
+        <video width="640" height="360" controls>
+            <source src="/assets/resources/img/video.mp4" type="video/mp4">
+        </video>
+    </div><br>
+    
+    <footer>
+        <div>
+            <p class="texto_footer"> Luis Fernando Quiyuch Quiyuch | Kinal | 6to Perito</p>
+        </div>
+    </footer>
+
+    <script src="/assets/scripts/logicaBiografia.js"></script>
+</body>
+
+</html>
