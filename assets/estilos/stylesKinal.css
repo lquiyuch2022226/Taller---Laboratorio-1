@@ -5,6 +5,7 @@
 }
 
 .bar{
+    height: 100px;
     display: flex;
     justify-content: center;
     line-height: 50px;
@@ -17,20 +18,73 @@
     align-items: center;
 }
 
-.cabeza_items li a{
-    padding: 30px;
-    color: white;
-    text-decoration: none;
-    font-weight: bolder;
-
-}
-
-.cabeza_items li a:hover{
-    text-decoration: underline;
-    color: #d6d6d6;
-}
-
 .cabeza_items img{
     max-height: 80%;
     max-width: 250px;
+}
+
+footer{
+    color: white;
+    background: radial-gradient(circle, #1a2e59 0%, rgba(22,35,63,1) 100%);
+    height: 100px;
+    text-align: center;
+}
+
+.texto_footer{
+    padding: 35px;
+}
+
+
+.contenedor::before{
+    content:"";
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #99000c33 0%, #0000008c 100%), url('/assets/resources/img/fondo_kinal.png');
+    background-size: cover;
+     
+    z-index: -1;
+}
+
+
+.contenedor{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #fff;
+}
+
+.nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__ul{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.nav__items{
+    padding: 20px;
+    text-decoration: underline;
+    font-weight: 600;
+    background-color: #1a2e59;
+    border-radius: 30px;
+}
+
+.nav__links{
+    color: #fff;
+    text-decoration: none;
+
 }
