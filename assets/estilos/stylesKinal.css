@@ -1,0 +1,36 @@
+*{
+    font-family: rubik-light,sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+
+.bar{
+    display: flex;
+    justify-content: center;
+    line-height: 50px;
+    background: radial-gradient(circle, rgba(26,46,89,1) 0%, rgba(22,35,63,1) 100%);
+}
+
+.cabeza_items{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.cabeza_items li a{
+    padding: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+
+}
+
+.cabeza_items li a:hover{
+    text-decoration: underline;
+    color: #d6d6d6;
+}
+
+.cabeza_items img{
+    max-height: 80%;
+    max-width: 250px;
+}
